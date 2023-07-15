@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body{
+    margin: 0px;
+    font-family: 'Roboto';
+    text-align: center;
+}
+
+#container{
+    
+    text-transform: uppercase;
+    font-size: 38px;
+    font-weight: bold;
+    padding-top: 200px;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    display: block;
+    height: 100%;
+    background: linear-gradient(to right bottom,#7CB9E8,#0071c5,dimgray);
+}
+
+h2{
+    width: 400px;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: ghostwhite;
+    
+}
+
+h3{
+    color: ghostwhite;
+}
+
+#change{
+    height: 80px;
+    overflow:hidden;
+    padding-top: 20px;
+   
+}
+
+#change  div  div{
+    color: white;
+    padding: 4px 12px;
+    height: 45px;
+    margin-bottom: 45px;
+    display: inline-block;
+}
+#change div:first-child{
+    animation: show 8s linear infinite;
+    
+}
+
+#change div:first-child div {
+    background-color: midnightblue;
+    color: white;
+    border-radius: 5px;
+}
+
+#change div:nth-child(2) div{
+    background-color: midnightblue;
+    border-radius: 5px;
+}
+
+/*
+#change div:nth-child(3) div{
+    background-color: orangered;
+}
+*/
+
+#change div:last-child div {
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+}
+
+@keyframes show{
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  81% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
+
+#container2{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    line-height: 1200px;
+    
+}
+
+#load span{
+    font-size: 70px;
+    padding: 0 10px;
+    text-transform: uppercase;
+    color: #fff;
+    animation: zoomup 2s linear infinite;
+    animation-delay: calc(250ms * var(--i));
+    box-shadow: 1px 2px black;
+    
+}
+
+@keyframes zoomup{
+    0%,
+    100% {
+        color: orangered;
+        filter: blur(1px);
+        text-shadow: 
+            0 0 10px #000, 
+            0 0 20px #000, 
+            0 0 30px #000, 
+            0 0 40px #000,
+            0 0 60px #000,
+            0 0 80px #000,
+            0 0 100px #000;
+    }
+    
+    5%,
+    95% {
+        filter: blur(0);
+        color: #fff;
+        text-shadow: none;
+    }
+}
